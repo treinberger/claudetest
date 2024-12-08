@@ -1,3 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
-@import '@aposin/ng-aquila/styles/normalize.css';
-@import '@aposin/ng-aquila/styles/utility.css';
+@import '@aposin/ng-aquila/styles/normalize';
+@import '@aposin/ng-aquila/styles/utility';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.raffle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
